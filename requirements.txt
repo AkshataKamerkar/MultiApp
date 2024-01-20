@@ -1,0 +1,4 @@
+Django~=4.2.9
+ChatterBot~=1.0.8
+requests~=2.31.0
+beautifulsoup4~=4.12.3

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChatBot</title>
+
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
+</head>
+<body>
+    <div class="flex flex-col bg-gray-500 rounded-r-3xl text-white md-5 mb-8">
+        <div class="flex items-center justify-between h-20 shadow-md mx-5">
+            <h1 class="text-3xl uppercase font-bold">CHATBOT</h1>
+            <a href="/" class="text-2xl hover:underline mr-3">Home</a>
+        </div>
+    </div>
+
+    <div>
+        <div id="chatbot">
+            <p class="botText"><span>Hi there !! I'm an AI Powered Chat-Bot !!</span></p>
+        </div>
+        <div id="userInput">
+            <input type="text" id="textInput" name="userMessage" placeholder="Type your message...">
+            <input type="submit" value="Send" id="buttonInput">
+        </div>
+    </div>
+
+
+    <script>
+
+        $(document).ready(function() {
+            function getUserResponse() {
+                var userText = $('#textInput').val();
+                var userHTML = "<p class='userText'>User: <span>"+userText+"</span></p>";
+
+                $('#textInput').val("");
+                $('#chatbot').append(userHTML);
+
+                $.get('/getResponse',{userMessage:userText}).done(function(data){
+
+                    var returnedMessage = "<p class='botText'>ChatBot: <span>"+data+"</span></p>";
+                    $('#chatbot').append(returnedMessage);
+                })
+            }
+
+            $('#buttonInput').click(function() {
+                getUserResponse();
+            });
+        });
+
+
+    </script>
+
+</body>
+</html>

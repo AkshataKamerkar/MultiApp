@@ -1,0 +1,48 @@
+Hi
+Hi, there!
+What's your name?
+I'm an AI-built ChatBot
+How do I create a website?
+Creating a website involves several steps, including choosing a domain, designing the layout, and coding the pages. There are various online platforms to help you with this.
+What is the meaning of life?
+The meaning of life is a philosophical question with no universally agreed-upon answer. It often depends on personal beliefs and perspectives.
+What is Django?
+Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design.
+What are the main features of Django?
+Django includes an ORM, URL routing, template engine, forms handling, and authentication, among other features.
+Explain Django's ORM (Object-Relational Mapping).
+Django's ORM allows you to interact with your database using Python code, abstracting away the need to write raw SQL queries.
+What is the purpose of Django's template engine?
+Django’s template engine allows you to create dynamic HTML by embedding Python-like code in your HTML templates.
+What is the role of middleware in Django?
+Middleware is a way to process requests globally before they reach the view. Examples include authentication and security middleware.
+Explain Django's URL routing system.
+Django uses a URL routing system that maps URL patterns to view functions, providing a clean way to organize and structure your web application.
+What is a Django model?
+A Django model is a Python class that represents a database table, allowing you to define the structure and behavior of your data.
+How can you secure a Django project?
+Securing a Django project involves using HTTPS, handling user authentication and authorization properly, and applying security best practices.
+What is Django REST framework?
+Django REST framework is a powerful and flexible toolkit for building Web APIs in Django, making it easier to develop RESTful services.
+Explain the concept of Django migrations.
+Django migrations are a way to propagate changes you make to your models (adding a field, deleting a model) into your database schema.
+What is Django middleware and give an example?
+Django middleware is a way to process requests globally before they reach the view. An example is the authentication middleware that checks if a user is logged in.
+How does Django handle forms?
+Django provides a forms handling system that simplifies the process of collecting and validating user input.
+What is Django's role in the Model - View - Controller(MVC) architecture?
+Django follows the Model-View-Template (MVT) pattern, which is a slight variation of the traditional Model-View-Controller (MVC) architecture.
+What is Django's signal framework?
+Django signals allow certain senders to notify a set of receivers when certain actions occur elsewhere in the application.
+Explain Django's request / response cycle.
+In Django, a user's request is processed through a series of middleware components before reaching the view, and the response goes through the same middleware components in reverse order.
+What is Django's authentication system?
+Django provides a built-in authentication system that includes user login, logout, password reset, and user permissions.
+What is the purpose of Django's context processors?
+Context processors allow you to make certain variables available globally to all templates in your Django project.
+How can you cache data in Django?
+Django provides a caching framework that allows you to store and retrieve arbitrary pieces of data with a specified timeout period.
+What is Django's testing framework?
+Django has a built-in testing framework that allows you to write and run tests for your application, ensuring its correctness and reliability.
+How can you handle static files in Django?
+Django provides a static file handling mechanism to manage and serve static files like CSS, JavaScript, and images in your web application.
