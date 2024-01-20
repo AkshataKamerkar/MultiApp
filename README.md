@@ -56,7 +56,7 @@ Accessing the project involves a few steps:
 
 **Step 1 :** Clone the repository
 ```
-    git clone https://github.com/your-username/multi-app-django.git
+    git clone https://github.com/AkshataKamerkar/MultiApp
 
 ```
 
